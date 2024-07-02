@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   # Allows attributes to be changed within sign up and update forms, keys point to the attributes 
