@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "photos#index"
   resources :likes
   resources :follow_requests
   resources :comments
@@ -8,5 +9,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root "photos#index"
+  
 end
